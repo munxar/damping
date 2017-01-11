@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canvas" width="640" height="480"></canvas>
+<label for="damping">damping</label>
+<input type="range" id="damping" min="0" max="1" step="0.001" oninput="setweight(event)" value="1">
+<p id="info"></p>
+<script src="app.js"></script>
+</body>
+</html>
